@@ -21,23 +21,23 @@ class EventsIndex extends Component {
 
   render(){
     const props = this.props
-  return (
-    <React.Fragment>
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Body</th>
-          </tr>
-        </thead>
-        <tbody>
-          {this.renderEvents()}
-        </tbody>
-      </table>
-    </React.Fragment>
-    )
-  }
+    return (
+      <React.Fragment>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Body</th>
+            </tr>
+          </thead> 
+          <tbody>
+            {this.renderEvents()}
+          </tbody>
+        </table>
+      </React.Fragment>
+      )
+    }
 }
 
 const mapStateToProps = state => ({ events: state.events})
